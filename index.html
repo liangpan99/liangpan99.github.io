@@ -1,0 +1,207 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Li-Ke Ma">
+  <meta name="keywords" content="computer graphics, Liang Pan">
+
+  <!-- source sans pro font -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <!-- bootstrap style -->
+  <link rel="stylesheet" type="text/css" href="src/bootstrap/css/bootstrap.min.css" >
+  <!-- font awesome style -->
+  <link rel="stylesheet" type="text/css" href="src/font-awesome/css/font-awesome.min.css">
+  <!-- costum style -->
+  <link rel="stylesheet" type="text/css" href="src/costum_style.css">
+
+  <!-- javascript -->
+  <script src="src/jquery-3.2.1.min.js"></script>
+  <script src="src/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- page information -->
+  <title>Liang Pan's Homepage</title>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115451279-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-115451279-2');
+  </script>
+</head>
+
+
+<body>
+<div class="container">
+<div class="content">
+  
+  <!-- Biography -->
+  <div id="biography" class="row display-flex">
+    <!-- profile image -->
+    <div class="col-xs-5" align="center">
+          <img class="img-rounded" width="65%" src="images/me.jpg" data-holder-rendered="true">
+    </div>
+
+    <!-- profile text -->
+    <div class="col-xs-7">
+
+      <h1> Liang Pan </h1>
+      <div id="biography_text">
+        I am currently a MSc student in Southeast University supervised by <a href="https://www.yangangwang.com/" target="_blank">Yangang Wang</a>, majoring in 3D digital human and physics-based character animation. 
+        Before that, I got my bachelor's degree from Hangzhou Dianzi University in 2021 supervised by <a href="https://zxforchid.github.io/index.html" target="_blank">Xiaofei Zhou</a>.</a>
+      </div>
+
+      <br>
+      From 2023.3 until now, I am a research intern at Xiaohongshu (RED), working with <a href="https://haofanwang.github.io/" target="_blank">Haofan Wang</a>.
+
+      <div class="row con-icon">
+        <a class="col-xs-2" href="mailto:liangpan1005@163.com"> <i class="fa fa-envelope"></i></a>
+        <a class="col-xs-2" href="https://github.com/liangpan99" target="_blank"> <i class="fa fa-github"></i></a>
+        <a class="col-xs-2" href="https://scholar.google.com/citations?user=B5rO1jcAAAAJ&hl=en" target="_blank"> <i class="fa fa-graduation-cap"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Piblication -->
+  <div id="publication"> 
+
+    <a name="publication-pos"></a>
+    <h2 class="page-header"> Publications </h2>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-3">
+        <video class="img-thumbnail" muted autoplay loop width="400">
+          <source src="projects/InterScene/teaser.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="col-xs-19">
+        <strong>Synthesizing Physically Plausible Human Motions in 3D Scenes</strong>
+        <div id="authors"> <strong>Liang Pan</strong>, Jingbo Wang, Buzhen Huang, Junyu Zhang, Haofan Wang, Xu Tang, Yangang Wang </div>
+        <div id="journal">  arXiv Preprint 2023 </div>
+        <!-- <div id="authors">  [<a href="https://liangpan99.github.io/" target="_blank">Project Page</a>] [Paper] </div> -->
+        <div id="authors">  [Project Page] [Paper] </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-3">
+        <img class="img-thumbnail" src="projects/NeuralMocon/teaser.jpg">
+      </div>
+      <div class="col-xs-19">
+        <strong>Neural MoCon: Neural Motion Control for Physically Plausible Human Motion Capture</strong>
+        <div id="authors"> Buzhen Huang, <strong>Liang Pan</strong>, Yuan Yang, Jingyi Ju, Yangang Wang </div>
+        <div id="journal">  CVPR 2022 </div>
+        <div id="authors">  [<a href="https://www.yangangwang.com/papers/HBZ-NM-2022-03.html" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2203.14065" target="_blank">Paper</a>] </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-3">
+        <img class="img-thumbnail" src="projects/Saliency/teaser.png">
+      </div>
+      <div class="col-xs-19">
+        <strong>Cross-modal Feature Extraction and Integration based RGBD Saliency Detection</strong>
+        <div id="authors"> <strong>Liang Pan</strong>, Xiaofei Zhou, Ran Shi, Jiyong Zhang, Chenggang Yan </div>
+        <div id="journal"> Image and Vision Computing 2020</div>
+        <div id="authors"> [<a href="https://drive.google.com/file/d/1tp7ie5PMeMXh5BUxE5mehiJYKDuOjlu_/view" target="_blank">Paper</a>] </div>
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+  <!-- Projects -->
+  <div id="project"> 
+
+    <a name="project-pos"></a>
+    <h2 class="page-header"> Projects </h2>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-3">
+          <img class="img-thumbnail" src="projects/SamCon/videos/run_improved_samcon.gif">
+      </div>
+      <div class="col-xs-19">
+        <strong>SamCon: Sampling-based Motion Control</strong>
+        <div id="authors"> PyBullet Implementation of SamCon (SIGGRAPH 2010 & EG 2015)  </div>
+        <!-- <div id="journal"> reproduction of  <a href="https://libliu.info/Samcon/Samcon.html" target="_blank">SamCon</a> (SIGGRAPH 2010) & <a href="https://libliu.info/Samcon2/Samcon2.html" target="_blank">Improved SamCon</a> (EG 2015)</div> -->
+        <!-- <div id="journal">  to appear on Eurographics 2021 </div> -->
+        <!-- <div>
+            <a class="btn btn-default btn-sm btn-margin" href="https://github.com/liangpan99/SamCon" target="_blank" download> Code</a>
+            <a class="btn btn-default btn-sm btn-margin" href="https://liangpan99.github.io/projects/SamCon/index.html" target="_blank"> Demo</a>
+        </div> -->
+        <div id="authors"> [<a href="https://github.com/liangpan99/SamCon" target="_blank">Code</a>] [<a href="https://liangpan99.github.io/projects/SamCon/index.html" target="_blank">Demo</a>] </div>
+        <br>
+        <div> <iframe src="https://ghbtns.com/github-btn.html?user=liangpan99&repo=SamCon&type=star&count=true&v=2&size=small"
+          frameborder="0"
+          scrolling="0"
+          width="150"
+          height="20"
+        ></iframe> </div>
+
+      
+      </div>
+    </div>
+    <br>
+
+
+  </div>
+
+  <!-- Software -->
+  <!-- <div id="software">
+    <a name="software-pos"></a>
+    <h2 class="page-header"> Softwares </h2>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-2" align="center">
+        <a id="title" target="_blank" href="https://github.com/milkpku/IGsolver">
+          <h2><strong>IGsolver</strong></h2>
+        </a> 
+      </div>
+      <div class="col-xs-10">
+        <a id="title" target="_blank" href="https://github.com/milkpku/IGsolver"><strong>IGsolver</strong></a> is a C++ library implements several basic optimization algorithms (Newtown-Raphson algoritm for unconstrained optimization, SQP for equality constrained optimization).
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-2" align="center">
+        <a id="title" target="_blank" href="https://github.com/milkpku/IGsim">
+          <h2><strong>IGsim</strong></h2>
+        </a> 
+      </div>
+      <div class="col-xs-10">
+        <a id="title" target="_blank" href="https://github.com/milkpku/IGsim"><strong>IGsim</strong></a> is a tiny C++ library for FEM based deformable object simulation. It implements functions that calculate deformation energy, force, sitffness matrix and material gradient of neo-hookean materials.
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row pub-item"> 
+      <div class="col-xs-2">
+        <a href="https://github.com/milkpku/tetgen_gui">
+          <img class="img-thumbnail" src="tetgen_gui.png">
+        </a>
+      </div>
+      <div class="col-xs-10">
+        <a id="title" href="https://github.com/milkpku/tetgen_gui"><strong>Tetgen_gui</strong></a> is a GUI wrapper for <a id="title" href="http://wias-berlin.de/software/index.jsp?id=TetGen&lang=1"><strong>Tetgen</strong></a> that facilitates the process of tetrahedralizaiton of 3D meshes. It takes in 3D models (obj/off/ply/stl) and outputs tetrahedron mesh, and supports exporting region information.
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Education and Career -->
+  <!-- <div id="education">
+    <h2 class="page-header"> Career </h2>
+
+    Research Intern, Xiaohongshu, Mentor: <a href="https://haofanwang.github.io/" target="_blank">Haofan Wang</a>, 2023.3 ~ Now
+
+  </div> -->
+
+  
+</div>
+</div>
+</body>

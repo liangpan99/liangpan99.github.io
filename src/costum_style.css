@@ -1,0 +1,98 @@
+/* base page */
+body {
+  margin: 50px auto;
+  background: #cccccc;
+  font-size: 18px;
+}
+
+a {
+    color: #888888;
+}
+
+.container {
+  background: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*border-radius: 10px;*/
+  width: 1120px;
+}
+
+.content {
+    margin: 5%;
+}
+
+/* equal column height */
+.row.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* home page */
+#biography {
+  margin: 50px auto;
+}
+
+#biography h1{
+  font-size: 2.4em;
+}
+
+/* publication style */
+.pub-item h2{
+  font-size: 20px;
+}
+
+.pub-item #title{
+  color: #000000;
+}
+
+.pub-item #journal{
+  font-style: italic;
+}
+
+.pub-item .btn-margin{
+  font-size: 14px;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+
+/* contact style */
+.con-item {
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.con-icon {
+  margin: 15px 0px auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+/* project page */
+.project-title {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.project-author {
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-institute {
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-cover {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.project-content .btn{
+  font-size: 0.8em;
+}
+
+.modal-dialog {
+  padding-top: 15%;
+}

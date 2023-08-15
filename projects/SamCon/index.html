@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SamCon Demos</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <nav>
+        <ul>
+
+            <!-- <li><a href="/">Home</a></li> -->
+
+        </ul>
+    </nav>
+    <div class="container">
+    
+    <center><h1>SamCon: PyBullet Implementation Demos</h1></center>
+
+<hr>
+<tr>
+  <h3 style="margin-bottom:10px;">Reference Motion from AMASS Dataset</h3>
+
+  <table style="margin: 0px; padding: 0px;">
+
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/reference_motion_1.gif" alt="ref1" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/reference_motion_2.gif" alt="ref2" style="width:100%">
+      </div>
+    </td>
+  
+  </table>
+  
+</tr>
+
+<tr>
+  <h3 style="margin-bottom:10px;">PD Controller vs SamCon vs CMAES-Improved-SamCon</h3>
+
+  <h4 style="margin-bottom:10px;">motion skill: walk</h4>
+
+  <table style="margin: 0px; padding: 0px;">
+
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/walk_pd.gif" alt="walk_pd" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/walk_samcon.gif" alt="walk_samcon" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/walk_improved_samcon.gif" alt="walk_improved_samcon" style="width:100%">
+      </div>
+    </td>
+  
+  </table>
+
+  <h4 style="margin-bottom:10px;">motion skill: run-jump-walk</h4>
+
+  <table style="margin: 0px; padding: 0px;">
+
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/run_pd.gif" alt="run_pd" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/run_samcon.gif" alt="run_samcon" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/run_improved_samcon.gif" alt="run_improved_samcon" style="width:100%">
+      </div>
+    </td>
+  
+  </table>
+
+  <h4 style="margin-bottom:10px;">motion skill: kick</h4>
+
+  <table style="margin: 0px; padding: 0px;">
+
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/kick_pd.gif" alt="kick_pd" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/kick_samcon.gif" alt="kick_samcon" style="width:100%">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/kick_improved_samcon.gif" alt="kick_improved_samcon" style="width:100%">
+      </div>
+    </td>
+  
+  </table>
+
+  <h4 style="margin-bottom:10px;">motion skill: cartwheel</h4>
+
+  <table style="margin: 0px; padding: 0px;">
+
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/cartwheel_pd.gif" alt="cartwheel_pd" style="width: 100%;">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/cartwheel_samcon.gif" alt="cartwheel_samcon" style="width: 100%;">
+      </div>
+    </td>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/cartwheel_improved_samcon.gif" alt="cartwheel_improved_samcon" style="width: 100%;">
+      </div>
+    </td>
+  
+  </table>
+  
+</tr>
+
+<tr>
+  <h3 style="margin-bottom:10px;">Learning Process of CMAES-Improved-SamCon</h3>
+
+  <br>
+
+  <center>
+    <td style="margin: 0px; padding: 0px;">
+      <div>
+        <img src="videos/learningprocess_run_jump_walk.gif" alt="lp_run_jump_walk" style="width:45%">
+      </div>
+    </td>
+  </center>
+
+  <br>
+
+  <center>
+  <td style="margin: 0px; padding: 0px;">
+    <div>
+      <img src="videos/learningprocess_kick.gif" alt="lp_kick" style="width:45%">
+    </div>
+  </td>
+  </center>
+  
+  
+ 
+  
+</tr>
+ 
+    </div><!-- /.container -->
+  </body>
+  
+ 
+  
+  
+</html>
