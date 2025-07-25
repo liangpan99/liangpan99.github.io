@@ -39,6 +39,33 @@
     }
 </script>
 
+</style>
+
+</head>
+
+<script>
+// 获取GitHub star数量的函数
+async function fetchGitHubStars(repo, elementId) {
+    try {
+        const response = await fetch(`https://api.github.com/repos/${repo}`);
+        const data = await response.json();
+        const stars = data.stargazers_count;
+        document.getElementById(elementId).textContent = stars;
+    } catch (error) {
+        console.error('Error fetching GitHub stars:', error);
+        document.getElementById(elementId).textContent = '?';
+    }
+}
+
+// 页面加载时获取star数量
+window.addEventListener('load', function() {
+    fetchGitHubStars('liangpan99/TokenHSI', 'tokenhsi-stars');
+    fetchGitHubStars('liangpan99/InterScene', 'interscene-stars');
+});
+</script>
+
+</head>
+
 <!-- 鼠标悬停显示图片 -->
 <style>
     /* 容器样式 */
@@ -200,6 +227,14 @@
 <div class="publication_container">
     <div class="publication_image">
         <img src="images/TokenHSI.png">
+        <br>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px;">
+          <a href="https://github.com/liangpan99/TokenHSI" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px; margin-top: 3px;" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg> <span id="tokenhsi-stars">?</span>
+          </a>
+        </div>
     </div>
     <div class="publication_title">
       <p>
@@ -207,7 +242,8 @@
         <b>Liang Pan</b>, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Bo Dai, Taku Komura, Jingbo Wang<span class="corresponding">†</span></br>
         CVPR 2025 <b><span style="color:#f35555";>🏆️ Oral Presentation (Top 3.3%)</span></b></br>
         The 1st Workshop on Humanoid Agents @ CVPR 2025 <b><span style="color:#444fe6";> 🌟 Spotlight</span></b></br>
-        [<a href="https://arxiv.org/abs/2503.19901" target="_blank">Paper</a>][<a href="https://liangpan99.github.io/TokenHSI/" target="_blank">Project Page</a>]
+        [<a href="https://arxiv.org/abs/2503.19901" target="_blank">Paper</a>]
+        [<a href="https://liangpan99.github.io/TokenHSI/" target="_blank">Project Page</a>]
       </p>
     </div>
 </div>
@@ -267,7 +303,7 @@
         Closely Interactive Human Reconstruction with Proxemics and Physics-Guided Adaption</br>
         Buzhen Huang, Chen Li, Chongyang Xu, <b>Liang Pan</b>, Yangang Wang, Gim Hee Lee</br>
         CVPR 2024</br>
-        [<a href="https://arxiv.org/abs/2404.11291" target="_blank">Paper</a>][<a href="https://github.com/boycehbz/HumanInteraction" target="_blank">Code</a>]
+        [<a href="https://arxiv.org/abs/2404.11291" target="_blank">Paper</a>]
       </p>
     </div>
 </div>
@@ -275,6 +311,14 @@
 <div class="publication_container">
     <div class="publication_image">
         <img src="images/InterScene.jpg">
+        <br>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px;">
+          <a href="https://github.com/liangpan99/InterScene" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px; margin-top: 3px;" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg> <span id="interscene-stars">?</span>
+          </a>
+        </div>
     </div>
     <div class="publication_title">
       <p>
