@@ -441,6 +441,10 @@ sup {
 	font-family: "Times";
 }
 
+.core-contributor {
+	font-family: "Times";
+}
+
 .research_tab {
 	flex: 1;
 	/* flex-grow: 1; */
