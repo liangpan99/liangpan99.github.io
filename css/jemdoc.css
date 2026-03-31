@@ -407,7 +407,7 @@ table.imgtable, table.imgtable td {
 	flex-direction: row;
 	display: flex;
 	/* min-height: 88px; */
-	margin-bottom: 5px;
+	margin-bottom: 12px;
 }
 
 .publication_image {
@@ -425,6 +425,10 @@ table.imgtable, table.imgtable td {
 .publication_title {
 	margin-left: 15px;
 	margin-bottom: 3.5px;
+}
+
+.publication_title p {
+	margin-bottom: 0;
 }
 
 .newline_bg {
