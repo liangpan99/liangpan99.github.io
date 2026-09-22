@@ -377,6 +377,33 @@ img.eq {
 	margin: 0;
 }
 
+.profile-details #toptitle {
+	margin-bottom: 18px;
+	padding-bottom: 0;
+}
+
+#layout-content .profile-details #toptitle h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.profile-details p {
+	line-height: 1.4;
+	text-align: left;
+}
+
+.profile-details .profile-affiliation {
+	margin: 0 0 14px;
+}
+
+.profile-details .profile-contact {
+	margin: 0 0 8px;
+}
+
+.profile-details .profile-links {
+	margin: 0;
+}
+
 img.eqwl {
 	padding-left: 2em;
 	padding-top: 0.6em;
@@ -422,6 +449,36 @@ table.imgtable, table.imgtable td {
 	height: auto;
 }
 
+.lighto1-cover-crop {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 112.5px;
+	margin-top: 2px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 1px 1px 4px #444;
+}
+
+.publication_image .lighto1-cover-crop img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	border-radius: 0;
+	box-shadow: none;
+	object-fit: cover;
+	transform: scale(1.3);
+	transform-origin: 50% 60%;
+}
+
+.publication_image span[id$="-stars"] {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+	font-size: 14px;
+	font-variant-numeric: lining-nums tabular-nums;
+	line-height: 1;
+}
+
 .publication_title {
 	margin-left: 15px;
 	margin-bottom: 3.5px;
@@ -429,6 +486,18 @@ table.imgtable, table.imgtable td {
 
 .publication_title p {
 	margin-bottom: 0;
+}
+
+.tokenhsi-authors {
+	font-size: 15px;
+}
+
+.project-centered .publication_title {
+	display: flex;
+	align-items: center;
+	align-self: flex-start;
+	min-height: 112.5px;
+	margin-top: 2px;
 }
 
 .newline_bg {
